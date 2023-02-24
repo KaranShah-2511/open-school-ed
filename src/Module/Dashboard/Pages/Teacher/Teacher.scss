@@ -1,0 +1,50 @@
+.app-teacher-dashboard {
+  .boxes-main {
+    .box {
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      border-radius: 12px;
+      background: #c4f7d2;
+      text-decoration: none;
+      overflow: hidden;
+      span {
+        font-size: 20px;
+        color: var(--app-dark-gray);
+        font-weight: var(--app-font-semibold);
+        line-height: 26px;
+        padding-left: 25px;
+      }
+      img {
+        padding-top: 10px;
+        margin-bottom: -1px;
+      }
+    }
+    .box-call {
+      background: #c4f7d2;
+    }
+    .box-lesson {
+      background: #ffe882;
+    }
+    .box-calender {
+      background: #fed9ff;
+    }
+    .box-pupil {
+      background: #bfe6ff;
+    }
+  }
+}
+
+/* Media */
+@media only screen and (max-width: 1023px) {
+  .app-teacher-dashboard {
+    .boxes-main {
+      overflow-x: auto;
+      .row {
+        width: 1200px;
+      }
+    }
+  }
+}

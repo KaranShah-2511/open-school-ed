@@ -1,0 +1,20 @@
+$variable-prefix: app-;
+
+$font-family-base: "Poppins", sans-serif;
+
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "success": #00a373,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+$custom-colors: ();
+
+$colors: map-merge($colors, $custom-colors);
+
+$form-switch-bg-image: $form-switch-checked-bg-image;
+$form-switch-focus-bg-image: $form-switch-checked-bg-image;

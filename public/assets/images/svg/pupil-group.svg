@@ -1,0 +1,11 @@
+<svg id="illus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.313" height="91.037" viewBox="0 0 99.313 91.037">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b0dbfa"/>
+      <stop offset="1" stop-color="#90ccff"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_3490" data-name="Path 3490" d="M16123.657,7847.038a54.831,54.831,0,1,1,85.658-68.267v59.99a8.278,8.278,0,0,1-8.277,8.277Z" transform="translate(-16110.003 -7756.001)" fill="#d5efff" opacity="0.732"/>
+  <path id="Path_3477" data-name="Path 3477" d="M146.967,21.935a10.967,10.967,0,1,1,10.967-10.967A10.98,10.98,0,0,1,146.967,21.935Z" transform="translate(-89.752 26.858)" fill="#7cbeff"/>
+  <path id="Path_3491" data-name="Path 3491" d="M75.893,294.975H32.548A1.548,1.548,0,0,1,31,293.427a23.222,23.222,0,1,1,46.441,0A1.548,1.548,0,0,1,75.893,294.975Z" transform="translate(2.995 -221.207)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,102 @@
+.app-teacher-list {
+  .list-table {
+    thead tr th {
+      display: inline-block;
+      font-size: var(--app-font-comman-size);
+      color: var(--app-dark-gray);
+      line-height: 20px;
+      font-weight: var(--app-font-regular);
+      border-bottom: 0;
+      padding: 0;
+      text-transform: none;
+      &:first-child,
+      &:last-child {
+        width: 28px;
+      }
+      &:nth-child(2) {
+        width: 10%;
+        margin-left: 15px;
+      }
+      &:nth-child(3) {
+        width: 12%;
+      }
+      &:nth-child(4) {
+        width: 12%;
+      }
+      &:nth-child(5) {
+        width: 10%;
+      }
+      &:nth-child(6) {
+        width: 30%;
+      }
+      &:nth-child(7) {
+        width: 20%;
+      }
+      span {
+        display: block;
+        color: #b4b6be;
+        font-size: 14px;
+        font-weight: var(--app-font-semibold);
+        text-transform: uppercase;
+      }
+      span.multiple-row {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+    tbody tr td {
+      width: 12%;
+      &.profile-thumb img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+      }
+      &.yes {
+        font-weight: var(--app-font-semibold);
+        color: #50a7f0;
+      }
+      &.no {
+        font-weight: var(--app-font-semibold);
+        color: #ffad12;
+      }
+      .color-code {
+        height: 40px;
+        width: 4px;
+        display: inline-block;
+        border-radius: 10px;
+        vertical-align: middle;
+      }
+      &:last-child {
+        a {
+          color: #9598ac;
+          font-size: 20px;
+        }
+      }
+      &:first-child,
+      &:last-child {
+        width: 28px;
+      }
+      &:nth-child(2) {
+        width: 10%;
+        margin-left: 15px;
+      }
+      &:nth-child(3) {
+        width: 12%;
+      }
+      &:nth-child(4) {
+        width: 12%;
+      }
+      &:nth-child(5) {
+        width: 10%;
+      }
+      &:nth-child(6) {
+        width: 30%;
+      }
+      &:nth-child(7) {
+        width: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,247 @@
+/* Button Style */
+.btn {
+  transition: all 0.3s ease-out;
+  border-radius: 8px;
+  -webkit-appearance: unset;
+}
+.btn-success {
+  color: var(--app-white);
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--app-white);
+    background-color: #008154;
+  }
+  &:disabled,
+  &.disabled {
+    color: var(--app-white);
+  }
+}
+.btn-outline-success {
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--app-white);
+    background-color: #008154;
+  }
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid #dcdce2;
+  color: var(--app-dark-gray);
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid #dcdce2;
+    background: #dcdce2;
+  }
+  &:active:focus,
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(226, 227, 229, 50%);
+  }
+}
+
+/* toggle switch */
+@mixin switch($res: "sm") {
+  $index: 1rem;
+  $mainVal: 1rem;
+  @if $res == "md" {
+    $index: 2rem;
+    $mainVal: 1.5rem;
+  } @else if $res == "lg" {
+    $index: 3rem;
+    $mainVal: 2rem;
+  } @else if $res == "xl" {
+    $index: 4rem;
+    $mainVal: 2.5rem;
+  }
+  // margin-bottom: $index / 2;
+  .form-check-input {
+    height: $mainVal;
+    width: calc(#{$index} + 0.75rem);
+    border-radius: $mainVal * 2;
+  }
+}
+.form-switch {
+  .form-check-input {
+    -webkit-appearance: unset;
+    height: 1.3rem;
+    width: calc(1.5rem + 0.75rem);
+    border: 0px;
+    background-color: #d5d8e2;
+    -webkit-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+    &:focus {
+      box-shadow: unset;
+    }
+    &:checked {
+      background-color: var(--app-info);
+    }
+  }
+  &.form-switch-sm {
+    @include switch();
+  }
+  &.form-switch-md {
+    @include switch("md");
+  }
+  &.form-switch-lg {
+    @include switch("lg");
+  }
+  &.form-switch-xl {
+    @include switch("xl");
+  }
+
+  &.success {
+    .form-check-input:checked {
+      background-color: var(--app-success);
+    }
+  }
+
+  &.disabled {
+    .form-check-input:disabled {
+      opacity: unset;
+    }
+  }
+}
+/* form control */
+.form-check {
+  .form-check-input {
+    width: 17px;
+    height: 17px;
+    &:focus {
+      box-shadow: unset;
+    }
+    &:checked {
+      background-color: var(--app-input-border-focus);
+      border-color: var(--app-input-border-focus);
+    }
+  }
+}
+form input.form-control {
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  background: transparent;
+  color: var(--app-dark-gray);
+}
+
+form input.form-control::-webkit-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form input.form-control:-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form input.form-control::-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form input.form-control::placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form input.form-control:active,
+form input.form-control:focus {
+  border-color: var(--app-input-border-focus);
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+form textarea.form-control {
+  height: 115px;
+  border-radius: 8px;
+  resize: none;
+  font-size: 16px;
+  font-weight: normal;
+  background: transparent;
+  color: var(--app-dark-gray);
+}
+
+form textarea.form-control::-webkit-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form textarea.form-control:-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form textarea.form-control::-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form textarea.form-control::placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form textarea.form-control:active,
+form textarea.form-control:focus {
+  border-color: var(--app-input-border-focus);
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+form select.form-select {
+  -webkit-appearance: none;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../Images/Svg/arrow.svg) no-repeat;
+  background-position: 96% 50%;
+  background-size: 12px;
+  font-weight: normal;
+  color: var(--app-dark-gray);
+}
+
+form select.form-select::-webkit-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form select.form-select:-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form select.form-select::-ms-input-placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form select.form-select::placeholder {
+  color: var(--app-input-placeholder);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form select.form-select:active,
+form select.form-select:focus {
+  border-color: var(--app-input-border-focus);
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+form .auto-select__menu {
+  z-index: 9999;
+}

@@ -1,0 +1,62 @@
+.teacher-chat {
+  .tab-nav-area {
+    padding-left: calc(var(--app-gutter-x) * 0.5) !important;
+  }
+  .tab-content-area {
+    padding-right: calc(var(--app-gutter-x) * 0.5) !important;
+  }
+  .nav-link {
+    background: var(--app-white);
+    border-radius: 0;
+    padding: 20px 35px 20px 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: var(--app-dark-gray) !important;
+    .user-icon img {
+      width: 35px;
+      height: 35px;
+    }
+    &:after {
+      content: "";
+      width: calc(100% - 40px);
+      height: 1px;
+      background: #ecedf2;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &.active {
+      background: #f5f7fb;
+      &:after {
+        width: 100%;
+      }
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid var(--app-white);
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-out;
+        z-index: 2;
+      }
+    }
+  }
+  .tab-content {
+    border-left: 1px solid #eaebf2;
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    .content-inner {
+      padding: 10px;
+    }
+  }
+}

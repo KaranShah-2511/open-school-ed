@@ -1,0 +1,21 @@
+.player-popup-model {
+  .modal-header {
+    background: transparent;
+    height: auto !important;
+    padding: 1rem 1rem !important;
+    border-bottom: 1px solid #dee2e6 !important;
+    h3 {
+      margin: 0px;
+      color: var(--app-dark-gray);
+    }
+  }
+  .modal-dialog {
+    max-width: 725px;
+    transform: translateY(-50%) !important;
+    top: 50%;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0px;
+  }
+}

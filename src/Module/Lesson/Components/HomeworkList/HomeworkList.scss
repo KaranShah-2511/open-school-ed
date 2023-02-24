@@ -1,0 +1,110 @@
+.pupil-homework-list {
+  .homework-data {
+    margin-top: 20px;
+    h3 {
+      font-size: 18px;
+      font-weight: var(--app-font-semibold);
+      color: var(--app-dark-gray);
+      line-height: 22px;
+      margin: 0 0 5px;
+    }
+    .homework-list-slider {
+      margin: 0 0 0 -10px;
+      .swiper {
+        padding: 10px 50px 10px 10px;
+      }
+      .app-homework-hw-item {
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid var(--app-input-light-border);
+        box-shadow: 0 0 4px rgba(21, 34, 50, 0.18);
+        a {
+          text-decoration: none;
+        }
+        .homework-thumb {
+          position: relative;
+          .app-thumb-detail {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 15px;
+            width: 100%;
+            .due-submit-date {
+              img + .app-date {
+                color: var(--app-dark-gray);
+                font-size: var(--app-font-comman-size);
+                font-weight: var(--app-font-regular);
+                line-height: 20px;
+                margin-left: 10px;
+              }
+              .app-date {
+                color: var(--app-dark-gray);
+                font-size: var(--app-font-comman-size);
+                font-weight: var(--app-font-regular);
+                line-height: 20px;
+                margin-left: 0;
+              }
+            }
+            .app-bookmark {
+              position: relative;
+              display: inline-block;
+              svg {
+                color: var(--app-dark-gray);
+                font-size: 19px;
+              }
+            }
+          }
+        }
+        .app-pupil-homework-detail {
+          padding: 25px 15px;
+          height: 135px;
+          background: #def6ff;
+          h4 {
+            font-size: var(--app-font-comman-size);
+            color: var(--app-dark-gray);
+            font-weight: var(--app-font-regular);
+            line-height: 20px;
+            margin: 0 0 3px 5px;
+          }
+          h3 {
+            font-size: 18px;
+            font-weight: var(--app-font-semibold);
+            line-height: 22px;
+            color: var(--app-dark-gray);
+            margin: 0 0 0 5px;
+          }
+        }
+        .app-homework-author {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          padding: 12px;
+          img {
+            width: 30px;
+            height: 30px;
+            margin: 0 8px 0 0;
+            border-radius: 100%;
+          }
+          h5 {
+            margin: 0;
+            font-size: var(--app-font-comman-size);
+            color: var(--app-dark-gray);
+            font-weight: var(--app-font-regular);
+            line-height: 20px;
+          }
+        }
+      }
+      .app-homework-hw-item.cartoon {
+        .app-pupil-homework-detail {
+          background-color: #fef1a0;
+        }
+      }
+      .app-homework-hw-item.math {
+        .app-pupil-homework-detail {
+          background-color: #f1e5ff;
+        }
+      }
+    }
+  }
+}

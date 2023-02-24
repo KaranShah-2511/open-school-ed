@@ -1,0 +1,164 @@
+.pupil-group-setup {
+  .drop-list {
+    display: flex;
+    margin: 0 -15px;
+    .pupil-list {
+      width: 35%;
+      padding: 0px 20px 15px;
+      border-right: 1px solid #f1f2f7;
+      .pupil-unselected {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        border-bottom: 1px solid #f1f2f7;
+        margin: 0 0 12px;
+        padding: 0 15px 12px 5px;
+        span.user-icon {
+          margin: 0 10px 0 0;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+          }
+        }
+        span {
+          font-size: var(--app-font-comman-size);
+          color: var(--app-drak-gray);
+          font-weight: var(--app-font-regular);
+        }
+      }
+    }
+    .dropable-area {
+      width: 65%;
+      padding: 0px 20px 15px;
+      .pupil-selected-list {
+        .pupil-selected {
+          display: inline-block;
+          margin: 0 10px 10px 0;
+          .pupil-name {
+            .remove {
+              border: 0;
+              outline: none;
+              box-shadow: 0 0 0;
+              background: transparent;
+              width: auto;
+              height: auto;
+              padding: 0;
+              line-height: normal;
+            }
+          }
+        }
+      }
+      .app-assign-group {
+        margin: 50px 0 0;
+        .btn {
+          font-size: 14px;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: var(--app-font-bold);
+          text-align: center;
+          padding: 10px 18px;
+          .spinner {
+            margin-left: 8px;
+          }
+        }
+      }
+      .input-drop-area {
+        .form-label {
+          font-weight: var(--app-font-bold);
+          color: var(--app-drak-gray);
+        }
+      }
+      .dropable-graphic-area {
+        text-align: center;
+        margin: 0px 0px 20px;
+        display: block;
+        width: 100%;
+      }
+    }
+    .pupil-selected-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0 0;
+      .pupil-selected {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        .pupil-name {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          padding: 5px 8px;
+          border: 1px solid #dcdce2;
+          border-radius: 8px;
+          span.user-icon {
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+            }
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+          span.pupilName {
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .group-listing {
+    padding: 0px 20px 15px;
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        margin: 0 0 10px;
+        .group {
+          padding: 15px;
+          border: 1px solid var(--app-table-border-light);
+          border-radius: 6px;
+          box-shadow: 0 1px 4px rgba(21, 34, 50, 0.18);
+          .group-head {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: space-between;
+            span {
+              font-size: var(--app-font-comman-size);
+              color: var(--app-light-black);
+              line-height: 20px;
+            }
+            a {
+              width: 18px;
+              color: #50a7f0;
+              height: 18px;
+              line-height: 18px;
+            }
+          }
+          .group-users {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            margin-top: 20px;
+            .user-icon {
+              img {
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+              }
+              margin: 0 8px 0 0;
+            }
+            .user-more {
+              font-size: var(--app-font-comman-size);
+              color: var(--app-label-light);
+              margin: 0 0 0 0;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

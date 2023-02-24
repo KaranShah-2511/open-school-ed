@@ -1,0 +1,40 @@
+.show-video-popup {
+  padding: 20px;
+}
+.video-title{
+  width: 95%;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  height: 120px;
+  font-size: var(--app-font-comman-size);
+ 
+  color: var(--app-dark-gray);
+  font-weight: var(--app-font-regular);
+  display: inline-block;
+  white-space: break-spaces;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-top: 10px;
+}
+.small-description {
+  height: 120px;
+  overflow: hidden;
+  white-space:pre-wrap;
+}
+.modal-header {
+  background: transparent;
+  height: auto !important;
+}
+.load-button{
+  float: right;
+}
+.modal.show .modal-dialog {
+  transform: none;
+  max-width: 725px;
+  display: flex;
+  align-items: center;
+}

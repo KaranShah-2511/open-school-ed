@@ -1,0 +1,79 @@
+@import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+.app-introduction {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .btn {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var(--app-font-bold);
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .carousel .slide img {
+    width: 85%;
+    margin-top: 55px;
+  }
+  .app-intro-teacher .carousel .slide.one img {
+    width: 50%;
+  }
+  .app-intro-teacher .carousel .slide.two img {
+    width: 80%;
+  }
+  .app-intro-teacher .carousel .slide.three img {
+    width: 56%;
+    margin: 0px;
+  }
+  .app-intro-school .carousel .slide.one img {
+    width: 75%;
+  }
+  .app-intro-school .carousel .slide.two img {
+    width: 52%;
+  }
+  .app-intro-school .carousel .slide.three img {
+    width: 72%;
+    margin: 0px;
+  }
+  .app-intro-pupil .carousel .slide.one img {
+    width: 56%;
+  }
+  .app-intro-pupil .carousel .slide.two img {
+    width: 46%;
+  }
+  .app-intro-pupil .carousel .slide.three img {
+    width: 58%;
+    margin: 0px;
+  }
+  .caption {
+    margin: 25px 0;
+    h2 {
+      font-size: 32px;
+      color: var(--app-dark-gray);
+      margin: 0 0 30px;
+      font-weight: var(--app-font-bold);
+      line-height: normal;
+    }
+    p {
+      font-size: 18px;
+      color: var(--app-light-black);
+      margin: 0 auto 20px;
+      max-width: 46%;
+    }
+  }
+  .carousel .control-dots {
+    margin: 0;
+    bottom: 40px;
+    .dot {
+      box-shadow: 0 0 0;
+      border: 3px solid var(--app-dark-gray);
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+    }
+    .dot.selected {
+      background: var(--app-dark-gray);
+    }
+  }
+}

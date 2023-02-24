@@ -1,0 +1,129 @@
+.timetable-teacher table.table,
+.timetable-pupil table.table {
+    border-collapse: collapse;
+    thead {
+        border: 0;
+        vertical-align: middle;
+        tr {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            th:first-child {
+                width: 80px;
+                padding: 0;
+                background: #fff;
+                margin: 0 8px 0 0;
+            }
+            th {
+                width: 259px;
+                border: 0;
+                height: 30px;
+                padding: 0;
+                font-size: var(--app-font-comman-size);
+                color: var(--app-label-light);
+                line-height: 20px;
+                font-weight: var(--app-font-regular);
+            }
+        }
+    }
+    tbody {
+        border: 0;
+        tr {
+            display: flex;
+            margin: 0 0 10px;
+            td:first-child {
+                width: 80px;
+                height: 80px;
+                padding: 0;
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                justify-content: center;
+                border: 0 !important;
+                font-weight: var(--app-font-semibold);
+                margin: 0 8px 0 0;
+            }
+            td[colspan="2"] {
+                width: calc(259.5px * 2);
+            }
+            td[colspan="3"] {
+                width: calc(259.5px * 3);
+            }
+            td[colspan="4"] {
+                width: calc(259.4px * 4);
+            }
+            td[colspan="5"] {
+                width: calc(259.2px * 5);
+            }
+            td[colspan="6"] {
+                width: calc(259.2px * 6);
+            }
+            td[colspan="7"] {
+                width: calc(259.2px * 7);
+            }
+            td[colspan="8"] {
+                width: calc(259.2px * 8);
+            }
+            td[colspan="9"] {
+                width: calc(259.2px * 9);
+            }
+            td[colspan="10"] {
+                width: calc(259.1px * 10);
+            }
+            td:not(:first-child) {
+                margin: -0.5px;
+                // overflow: overlay;
+            }
+            td {
+                width: 260px;
+                height: 80px;
+                border: 1px solid var(--app-table-border-light);
+                padding: 0;
+                // position: relative;
+                .timetable-event,
+                .timetable-lesson {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    .color-area {
+                        height: 100%;
+                        width: 4px;
+                        margin: 0 10px 0 0;
+                    }
+                    .event-detail,
+                    .lesson-detail {
+                        h5 {
+                            font-size: var(--app-font-comman-size);
+                            font-weight: var(--app-font-regular);
+                            line-height: 20px;
+                            margin-bottom: 10px;
+                            color: var(--app-dark-gray);
+                        }
+                        p {
+                            display: flex;
+                            align-items: center;
+                            margin: 0;
+                            svg {
+                                width: 18px;
+                                height: 18px;
+                                color: var(--app-label-light);
+                            }
+                            span {
+                                color: var(--app-label-light);
+                                font-size: var(--app-font-comman-size);
+                                font-weight: var(--app-font-regular);
+                                line-height: 20px;
+                                margin: 0 0 0 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        tr.today {
+            td:first-child {
+                background-color: var(--app-day-label);
+            }
+        }
+    }
+}

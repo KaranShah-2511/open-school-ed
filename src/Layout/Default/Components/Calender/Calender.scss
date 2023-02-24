@@ -1,0 +1,62 @@
+.app-calendar {
+  nav.navbar {
+    padding: 0;
+    button {
+      padding: 19px;
+      background: url(../../../../Assets/Images/Svg/calendar-notification.svg) no-repeat;
+      background-position: 50% 50%;
+      background-size: 17px;
+      border: 1px solid #dcdce2;
+      border-radius: 8px;
+      position: relative;
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+#app-calendar {
+  .offcanvas-body {
+    padding: 30px 20px;
+    .app-calendar-legend {
+      margin: 30px 0 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          margin: 0 0 15px;
+          .legend-box {
+            width: 18px;
+            height: 18px;
+            background-color: #00a36b;
+            border-radius: 6px;
+            margin: 0 10px 0 0;
+          }
+          .class {
+            background-color: #50a7f0;
+          }
+          .homework {
+            background: #ffbb22;
+          }
+          .personal {
+            background: #bc8bff;
+          }
+          .legend-data {
+            font-size: 14px;
+            color: #b4b6be;
+            font-weight: var(--app-font-semibold);
+          }
+        }
+      }
+    }
+  }
+}

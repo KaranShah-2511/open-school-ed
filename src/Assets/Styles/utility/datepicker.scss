@@ -1,0 +1,142 @@
+@import "react-nice-dates/build/style.css";
+
+.date-range-picker {
+  .nice-dates-navigation {
+    span.nice-dates-navigation_current {
+      color: var(--app-dark-gray);
+      font-weight: var(--app-font-semibold);
+    }
+    a.nice-dates-navigation_previous:before {
+      width: 12px;
+      height: 12px;
+      border-right: 3px solid #9598ac;
+      border-top: 3px solid #9598ac;
+    }
+    a.nice-dates-navigation_next:before {
+      width: 12px;
+      height: 12px;
+      border-right: 3px solid #9598ac;
+      border-top: 3px solid #9598ac;
+    }
+    a.nice-dates-navigation_previous:hover::before {
+      border-right: 3px solid #00a36b;
+      border-top: 3px solid #00a36b;
+    }
+    a.nice-dates-navigation_next:hover::before {
+      border-right: 3px solid #00a36b;
+      border-top: 3px solid #00a36b;
+    }
+  }
+  .nice-dates-week-header {
+    padding: 25px 0 20px;
+    box-shadow: 0 0 0;
+    .nice-dates-week-header_day {
+      color: #999;
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      text-transform: capitalize;
+      width: calc(100% / 7);
+    }
+  }
+  .nice-dates-grid {
+    .nice-dates-day:after {
+      background: #ecedf0;
+      opacity: 1;
+      border: 0;
+      transform: scale(0.8);
+    }
+    .nice-dates-day span.nice-dates-day_month {
+      display: none;
+    }
+    .nice-dates-grid_container.-origin-top {
+      justify-content: space-between;
+      .nice-dates-day {
+        margin: 0 0 10px;
+      }
+    }
+    .nice-dates-day:before {
+      background: #d8f0ff;
+      top: 5px;
+      bottom: 5px;
+    }
+    .nice-dates-day.-selected-start:before {
+      left: 5px;
+    }
+    .nice-dates-day.-selected-end:before {
+      right: 5px;
+    }
+    .nice-dates-day.-selected:after {
+      background: transparent;
+    }
+
+    .nice-dates-day.-selected span {
+      color: var(--app-dark-gray);
+    }
+
+    .nice-dates-day.-selected.-selected-start:after,
+    .nice-dates-day.-selected.-selected-end:after {
+      background: #00a36b;
+    }
+
+    .nice-dates-day.-selected.-selected-start span,
+    .nice-dates-day.-selected.-selected-end span {
+      color: var(--app-white);
+    }
+  }
+}
+
+.nice-dates {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    background: url(../../Images/Svg/arrow.svg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px;
+    top: 50%;
+    right: 10px;
+    height: 12px;
+    transform: translateY(-50%);
+  }
+  input.form-control {
+    background: url(../../Images/Svg/calendar-small-icon.svg) no-repeat;
+    background-position: 10px 50%;
+    padding-left: 35px;
+    background-size: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  .nice-dates-navigation {
+    .nice-dates-navigation_current {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    a.nice-dates-navigation_previous:before,
+    a.nice-dates-navigation_next:before {
+      border-right: 2px solid #9598ac;
+      border-top: 2px solid #9598ac;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .nice-dates-day {
+    &:before {
+      background: #00a36b;
+    }
+    &:after {
+      border: 2px solid #00a36b;
+    }
+    span.nice-dates-day_month {
+      display: none;
+    }
+  }
+  .nice-dates-popover {
+    padding: 5px;
+    box-shadow: 0 1px 8px rgba(21, 34, 50, 0.18);
+  }
+  .nice-dates-grid {
+    margin-top: 5px;
+  }
+}

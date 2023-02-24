@@ -1,0 +1,102 @@
+.img-box {
+
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: auto;
+    border: none;
+    height: 130px;
+    width: 130px;
+    margin: 18px 0;
+    background-color: unset;
+    border-radius: 9px;
+    overflow: hidden;
+
+    .lock-images {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        position: absolute;
+        max-height: 300%;
+        opacity: 0.9;
+      }
+
+      #point {
+        position: relative;
+        top: -45px;
+        width: 30px;
+        font-size: 12px;
+        width: 100%;
+        background: red;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: white;
+        font-weight: bold;
+        z-index: 1;
+      }
+
+      .lock {
+        position: absolute;
+        font-size: 40px;
+        color: black;
+
+        .black {
+          background: black;
+          padding: 65px;
+          position: absolute;
+          opacity: 0.5;
+          top: -43px;
+          left: -53px;
+        }
+
+        .svg {
+          position: relative;
+          font-size: 25px;
+          color: #fcce00;
+          top: -35px;
+          left: -50px;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  &:nth-child(6n + 1) button {
+    background-color: #A194EC;
+  }
+
+  &:nth-child(6n + 2) button {
+    background-color: #A8DAFF;
+  }
+
+  &:nth-child(6n + 3) button {
+    background-color: #D18EEA;
+  }
+
+  &:nth-child(6n + 4) button {
+    background-color: #F2DD92;
+  }
+
+  &:nth-child(6n + 5) button {
+    background-color: #B0E2AF;
+  }
+
+  &:nth-child(6n + 6) button {
+    background-color: #E1A052;
+  }
+
+  button img {
+    max-height: 100%;
+    padding: 10px;
+  }
+}

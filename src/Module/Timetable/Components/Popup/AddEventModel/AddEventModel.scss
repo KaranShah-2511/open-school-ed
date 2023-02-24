@@ -1,0 +1,211 @@
+.modal-dialog {
+  max-width: 725px;
+  transform: translateY(-50%) !important;
+  top: 50%;
+  margin: 0 auto;
+}
+
+.add-event-popup {
+  padding: 30px;
+  max-width: 725px;
+
+  // .color-title-box {
+  //   height: 20px;
+
+  //   .color-box {
+  //     width: 10px;
+  //     border-radius: 8px;
+  //     height: 10px;
+  //   }
+  // }
+
+  .submit-btn {
+    float: right;
+  }
+
+  .note-color-peaker {
+    display: flex;
+    justify-content: space-between;
+
+    .note {
+      flex: 1;
+      padding-right: 16px;
+    }
+
+    .color-peaker {
+      width: 210px;
+      border-radius: 8px;
+      z-index: 50;
+    }
+  }
+
+  .modal-header {
+    background: transparent;
+    height: auto !important;
+  }
+
+  .save-btn {
+    text-transform: uppercase;
+    font-weight: var(--app-font-bold);
+    font-size: 14px;
+    padding: 0 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .modal-title {
+    padding: 5px 30px 30px !important;
+  }
+
+  .modal-dialog {
+    max-width: 725px !important;
+    transform: translateY(-50%) !important;
+    top: 50%;
+    margin: 0 auto;
+  }
+
+  .modal-body {
+    padding: 0px;
+  }
+
+  .content-inner {
+    padding: 30px 30px 25px 40px;
+
+    input {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      padding-left: 20px;
+      font-size: 20px;
+      outline: none;
+      outline-offset: 0px;
+      border: none
+    }
+
+    .title-bar {
+      border-bottom: 1px solid #eaebf2;
+      padding: 0 0 10px;
+
+      .subject-title {
+        border-bottom-width: 5px;
+      }
+
+      h2 {
+        font-size: 26px;
+        line-height: 35px;
+        color: var(--app-dark-gray);
+        font-weight: var(--app-font-bold);
+        margin-bottom: 15px;
+      }
+
+      .calender {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        #calender-icon {
+          width: 30px;
+          height: 30px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
+      }
+
+      .main-input-div {
+        margin-top: 10px;
+        width: 100%;
+
+        .nameOfEvent {
+          padding-top: 20px;
+
+          .multi-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .input-div-1,
+            .input-div-2 {
+              width: calc(50% - 10px);
+              margin-bottom: 10px;
+            }
+
+            .input-div-3 {
+              width: 100px;
+              margin-left: 10px;
+            }
+
+            .input-div-4 {
+              width: 100px;
+            }
+          }
+
+          p {
+            color: var(--app-gray-600);
+            font-size: 20px;
+          }
+
+          .input-div-note {
+            width: 100%;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+
+            #note {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+              margin-right: 20px;
+              display: flex;
+              position: relative;
+              overflow: hidden;
+              border: 1px solid var(--app-gray-600);
+              align-items: center;
+              justify-content: center;
+            }
+
+            .color {
+              width: 100px;
+              height: 100%;
+              padding-left: 5px;
+
+              #colorpeaker {
+                border: 1px solid;
+
+              }
+            }
+          }
+
+          .input-div {
+            width: 100%;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--app-gray-600);
+
+            .icon {
+              width: 30px;
+              height: 30px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

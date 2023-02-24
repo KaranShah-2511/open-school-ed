@@ -1,0 +1,11 @@
+/* Media */
+@media only screen and (max-width: 1023px) {
+  .app-school-dashboard {
+    .boxes-main {
+      overflow-x: auto;
+      .row {
+        width: 1200px;
+      }
+    }
+  }
+}

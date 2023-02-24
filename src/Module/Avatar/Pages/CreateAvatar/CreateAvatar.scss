@@ -1,0 +1,197 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  width: 90%;
+
+  .left-container {
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar-container{
+      margin-top: 11%;
+      padding: 0 15%;
+      background: url(../../../../Assets/Images/Svg/back.svg) no-repeat;
+      background-position: bottom;
+      background-size: contain;
+
+      .character {
+        position: relative;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+             
+        .main-avtar {
+          width: 70%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // border: 5px solid;
+  
+          .colour-5 { width: 280px;}
+          .avatarMaterial {
+            .hair-5     { position: absolute; top: -10%; display: flex; width: 55%; left: -1%; z-index: 10; }
+            .hair-10    { position: absolute; top: -7%; display: flex; width: 64%; left: 18%; z-index: 10; }
+            .hair-15    { position: absolute; top: -14%; display: flex; width: 73%; left: 31%; z-index: 10; }
+            .hair-20    { position: absolute; top: -9%; display: flex; width: 86%; left: 7%; z-index: 10;}
+            .hair-25    { position: absolute; top: -9%; display: flex; width: 86%; left: 7%; z-index: 10; }
+            .hair-30    { position: absolute; top: -15%; display: flex; width: 69%; left: 16%; z-index: 10; }
+            .eyes-5     { position: absolute; top: 11%; display: flex; width: 40%; left: 31%;}
+            .eyes-10    { position: absolute; top: 11%; display: flex; width: 40%; left: 31%; }
+            .eyes-15    { position: absolute; top: 11%; display: flex; width: 40%; left: 31%;}
+            .eyes-20    { position: absolute; top: 11%; display: flex; width: 40%; left: 31%; }
+            .eyes-25    { position: absolute; top: 11%; display: flex; width: 40%; left: 31%; }
+            .eyes-30    { position: absolute; top: 11%; display: flex; width: 40%; left: 31%; }
+            .mouth-5    { position: absolute; top: 32%; display: flex; width: 64%; left: 19%; z-index: 10;}
+            .mouth-10   { position: absolute; top: 32%; display: flex; width: 64%; left: 19%; z-index: 10;}
+            .mouth-15   { position: absolute; top: 25%; display: flex; width: 64%; left: 19%; z-index: 10;}
+            .mouth-20   { position: absolute; top: 32%; display: flex; width: 64%; left: 19%; z-index: 10;}
+            .mouth-25   { position: absolute; top: 30%; display: flex; width: 64%; left: 19%; z-index: 10; }
+            .mouth-30   {position: absolute; top: 32%; display: flex; width: 64%; left: 19%; z-index: 10; }
+            .clothes-5  {position: absolute; top: 3px; display: flex; width: 336px; left: -27px; height: 439px; }
+            .clothes-10 {position: absolute; top: 184px; display: flex; width: 314px; left: -18px; height: 257px; }
+            .clothes-15 {position: absolute; top: 21px; display: flex; width: 336px; left: -27px; height: 420px; }
+            .clothes-20 {position: absolute; top: 177px; display: flex; width: 336px; left: -27px; height: 264px; }
+          }
+        }
+      }
+
+    }
+
+    
+
+    .point-start {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 3px black;
+      
+      .point-container {
+        width: 100%;
+        height: 116px;
+        background-color: red;
+        border-radius: 10px;
+        background: url(../../../../Assets/Images/Svg/reward-stars-illus.svg) no-repeat;
+        background-size: cover;
+
+        .points {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .total-points {
+            font-size: 20px;
+            font-weight: bold;
+
+            .header-title {
+              font-size: 25px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .reward-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+
+        .reward {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .star {
+            width: 70px;
+            height: 70px;
+            padding-top: 10px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              padding-top: 15px;
+              color: white;
+              font-weight: bold;
+              font-size: 25px;
+            }
+          }
+
+          .gold-star {
+            background: url(../../../../Assets/Images/Svg/gold-selected.svg) no-repeat;
+            background-size: contain;
+          }
+
+          .silver-star {
+            background: url(../../../../Assets/Images/Svg/silver-selected.svg) no-repeat;
+            background-size: contain;
+          }
+
+          .bronze-star {
+            background: url(../../../../Assets/Images/Svg/bronze-selected.svg) no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+
+  .right-container {
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 3px black;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    .inner-right {
+      .header-tabs {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px 0px 0px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+
+        .nav .nav-item {
+          margin-right: 30px;
+
+          a {
+            padding: 15px 0 0;
+            color: #b4b6be;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &.active {
+              background-color: transparent;
+              color: #17a36b;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

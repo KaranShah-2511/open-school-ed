@@ -1,0 +1,71 @@
+.teacher-addedit-header {
+  box-shadow: 0 2px 2px rgba(21, 34, 50, 0.08);
+  .save-btn {
+    text-transform: uppercase;
+    font-weight: var(--app-font-bold);
+    font-size: 14px;
+    padding: 0 20px;
+    height: 40px;
+  }
+  .spinner {
+    margin-left: 8px;
+  }
+}
+.teacher-addedit-main {
+  padding: 0px !important;
+}
+.app-teacher-addedit {
+  .profile-banner {
+    background: url(../../../../Assets/Images/Svg/profile-top.svg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    .profile-pic {
+      position: absolute;
+      bottom: -20px;
+      left: 60px;
+      img {
+        width: 120px;
+        height: 120px;
+        border: 5px solid #fff;
+        border-radius: 100%;
+      }
+      .form-label {
+        color: var(--app-input-border-focus);
+        background-color: #ffffff;
+        padding: 0.2rem 0.4rem;
+        border: 1px solid #cbccd8;
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+        margin-bottom: 0px;
+      }
+    }
+    .profile-pic-input {
+      width: 0px;
+      height: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .form-container {
+    margin: 35px auto 65px;
+    display: block;
+    .inner-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .form-label {
+      color: var(--app-label-light);
+      font-weight: var(--app-font-regular);
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  hr {
+    background-color: #f1f2f7;
+    opacity: 1;
+  }
+}

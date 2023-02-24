@@ -1,0 +1,20 @@
+.canvas-container {
+  margin-bottom: 50px;
+}
+
+.PdfReader_pdfReader__BGDeB {
+  display: none;
+}
+
+.Whiteboard_dropdownContent__eO-CW span  {
+  &:nth-child(1){
+                                         
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  &:nth-child(2){
+    display: none;
+  }
+}

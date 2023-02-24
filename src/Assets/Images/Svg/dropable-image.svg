@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="404" height="237" viewBox="0 0 404 237">
+  <g id="Group_2201" data-name="Group 2201" transform="translate(-392.5 -243.5)">
+    <rect id="Rectangle_17336" data-name="Rectangle 17336" width="236" height="403" rx="6" transform="translate(796 244) rotate(90)" fill="#f9fafc" stroke="#57abf0" stroke-width="1" stroke-dasharray="3 3"/>
+    <g id="dragdrop-icon" transform="translate(567.002 312.428)">
+      <path id="Path_3382" data-name="Path 3382" d="M17873.645,2263.371a1.171,1.171,0,0,1-1.168-1.169,20.856,20.856,0,0,0-3.092-10.928.593.593,0,0,1-.049-.1,1.165,1.165,0,0,1,.531-1.562,13.981,13.981,0,0,1,20.119,12.587,1.171,1.171,0,0,1-1.168,1.169Zm-3.984-18.905a8.754,8.754,0,1,1,6.189,2.563A8.756,8.756,0,0,1,17869.66,2244.466Z" transform="translate(-17837.08 -2221.351)" fill="#afe0ff"/>
+      <path id="Path_3381" data-name="Path 3381" d="M17868.133,2273.094a1.109,1.109,0,0,1-1.037-1.166c0-9.67,6.971-17.506,15.561-17.506s15.566,7.836,15.566,17.506a1.108,1.108,0,0,1-1.039,1.166Zm5.52-24.645a11.084,11.084,0,1,1,7.84,3.249A11.083,11.083,0,0,1,17873.652,2248.449Z" transform="translate(-17867.096 -2229.521)" fill="#50a7f0"/>
+    </g>
+    <text id="_3.49_" data-name="+ 3.49%" transform="translate(595 396)" fill="#b4b6be" font-size="14" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-126.483" y="0">Drag and drop pupils here to create</tspan><tspan x="-44.345" y="20">a new group</tspan></text>
+  </g>
+</svg>

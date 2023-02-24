@@ -1,0 +1,63 @@
+.app-lesson-list {
+  &.teacher-lesson-list {
+    .list-table {
+      thead tr th {
+        width: 12%;
+        &:first-child,
+        &:last-child {
+          width: 25px;
+        }
+        &:nth-child(2) {
+          width: 15%;
+        }
+        &:nth-child(3) {
+          width: 25%;
+        }
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          width: 10%;
+        }
+      }
+      tbody tr td {
+        width: 12%;
+        &.yes {
+          font-weight: var(--app-font-semibold);
+          color: #50a7f0;
+        }
+        &.no {
+          font-weight: var(--app-font-semibold);
+          color: #ffad12;
+        }
+        .color-code {
+          height: 40px;
+          width: 4px;
+          display: inline-block;
+          border-radius: 10px;
+          vertical-align: middle;
+        }
+        &:last-child {
+          a {
+            color: #9598ac;
+            font-size: 20px;
+          }
+        }
+        &:first-child,
+        &:last-child {
+          width: 25px;
+        }
+        &:nth-child(2) {
+          width: 15%;
+        }
+        &:nth-child(3) {
+          width: 25%;
+        }
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          width: 10%;
+        }
+      }
+    }
+  }
+}

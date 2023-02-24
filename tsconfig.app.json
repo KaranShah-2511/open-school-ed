@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "src/types"
+    ],
+    "types": [
+      "@types/jest"
+    ]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "test.tsx",
+    "*.test.tsx",
+    "**/*.test.tsx",
+    "*.bkp.tsx",
+    "**/*.bkp.tsx"
+  ],
+  "resolve": {
+    "modules": ["src"]
+  }
+}

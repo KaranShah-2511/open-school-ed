@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "./theme.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "./root.scss";
+@import "./utility/table.scss";
+@import "./utility/form.scss";
+@import "./utility/model.scss";
+@import "./utility/datepicker.scss";
+@import "react-loading-skeleton/dist/skeleton.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  transition: all 0.3s ease-out;
+  &:focus-visible {
+    outline: none;
+  }
+}
+html body,
+body,
+html {
+  margin: 0;
+  font-family: var(--app-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  max-width: 100%;
+}
+/*Common Css*/
+.row {
+  --app-gutter-x: 1rem;
+}
+.d-flex-center {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text-right {
+  text-align: right;
+}
+.pull-right {
+  float: right;
+}
+.w-100 {
+  width: 100%;
+}
+.m-0 {
+  margin: 0 0 0 0 !important;
+}
+.mb--3 {
+  margin-top: -0.75rem !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mt-100 {
+  margin-top: 100px !important;
+}
+.mt-50 {
+  margin-top: 50px !important;
+}
+.ml-1 {
+  margin-left: 1rem !important;
+}
+.mr-1 {
+  margin-right: 1rem !important;
+}
+.p-0 {
+  padding: 0 0 0 0 !important;
+}
+.pb--3 {
+  padding-top: -0.75rem !important;
+}
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pt-100 {
+  padding-top: 100px !important;
+}
+.pt-50 {
+  padding-top: 50px !important;
+}
+.pl-1 {
+  padding-left: 1rem !important;
+}
+.pr-1 {
+  padding-right: 1rem !important;
+}
+.pr-30 {
+  padding-right: 30px !important;
+}
+.br-lw-0 {
+  border-left-width: 0px !important;
+}
+.br-rw-0 {
+  border-right-width: 0px !important;
+}
+p {
+  font-size: var(--app-font-comman-size);
+  font-weight: var(--app-font-regular);
+  line-height: 24px;
+  color: var(--app-dark-gray);
+}
+
+/* toast */
+.toast-container {
+  z-index: 9999;
+}
+.toast {
+  color: var(--app-white);
+  &.bg-light {
+    color: var(--app-dark-gray);
+  }
+  .toast-btn-area {
+    display: flex;
+    justify-content: flex-end;
+    button + button {
+      margin-left: 1rem;
+    }
+  }
+}
+/* Panel Style */
+.panel {
+  position: relative;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  .panel-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #eaebf2;
+  }
+  .panel-body {
+    background-color: #ffffff;
+    border: 1px solid #eaebf2;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+  }
+}
+/* offcanvas */
+.offcanvas {
+  button.btn-close {
+    box-shadow: 0 0 0;
+    outline: none;
+  }
+  .offcanvas-header {
+    padding: 25px 20px;
+    border-bottom: 1px solid #f1f2f7;
+    box-shadow: 0 0 3px rgba(21, 34, 50, 0.06);
+    .offcanvas-title {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: var(--app-font-semibold);
+    }
+    button.btn-close {
+      opacity: 1;
+      padding: 0;
+      margin: 0;
+      width: 16px;
+      height: 16px;
+      background-size: 1.2rem;
+    }
+  }
+}
+.offcanvas-backdrop.show {
+  background: #2a2e43;
+  opacity: 0.5;
+}
+.offcanvas-end.show,
+.offcanvas-end {
+  border: 0;
+  box-shadow: 0 0 27px rgba(19, 23, 31, 0.1);
+}
+
+/* App style */
+.app-network {
+  z-index: 99999;
+  .toast-body {
+    position: relative;
+    font-size: var(--app-font-comman-size);
+    .btn-close {
+      position: absolute;
+      right: 0;
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+.app-empty-screen {
+  background: var(--app-white);
+  border-radius: 10px;
+  padding: 120px 50px;
+  text-align: center;
+  .app-empty-icon {
+    margin: 0 0 24px;
+  }
+  .app-empty-content {
+    h3 {
+      font-size: 22px;
+      font-weight: var(--app-font-semibold);
+      line-height: 26px;
+      margin: 0 0 5px;
+      color: var(--app-dark-gray);
+    }
+    p {
+      font-size: var(--app-font-comman-size);
+      font-weight: var(--app-font-regular);
+      color: var(--app-light-gray);
+    }
+  }
+}

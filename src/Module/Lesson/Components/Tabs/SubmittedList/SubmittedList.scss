@@ -1,0 +1,58 @@
+.lesson-homework-submitted-list {
+  margin-top: 15px;
+  .list-table {
+    thead {
+      vertical-align: top;
+    }
+    .first {
+      width: 26%;
+    }
+    .second {
+      width: 20%;
+    }
+    .third {
+      width: 16%;
+    }
+    .four {
+      width: 18%;
+    }
+    .five {
+      width: 18%;
+    }
+    th {
+      width: 25px;
+    }
+    tbody {
+      .profile {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          border-radius: 100%;
+        }
+      }
+      .submited,
+      .marked {
+        font-weight: var(--app-font-semibold);
+        color: #ffad12;
+      }
+      .submited {
+        &.yes {
+          color: #50a7f0;
+        }
+      }
+      .marked {
+        &.yes {
+          color: #bc8bfd;
+        }
+      }
+      tr td:last-child a {
+        color: #9598ac;
+        font-size: 20px;
+      }
+    }
+  }
+}

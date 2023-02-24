@@ -1,0 +1,113 @@
+.app-material {
+  .video-gallery-main {
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--app-dark-gray);
+      font-weight: var(--app-font-semibold);
+      margin: 0 0 20px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid #f1f2f7;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 -10px 30px;
+
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        width: 20%;
+
+        .video-popup{
+          background-color: gray;
+          width: 100%;
+          height: 200px;
+          border-radius: 15px;
+        }
+
+        .video-banner {
+          position: relative;
+          margin: 0 0 0;
+          padding: 0px;
+          min-height: auto;
+       
+          label {
+            height: 100%;
+            display: block;
+            position: relative;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          input[type="checkbox"] {
+            display: none;
+
+            &:not(:disabled) ~ label {
+              cursor: pointer;
+            }
+
+            &:disabled ~ label {
+              color: hsla(150, 5%, 75%, 1);
+              box-shadow: none;
+              cursor: not-allowed;
+            }
+          }
+
+          input[type="checkbox"]:checked + label {
+            &::after {
+              content: "";
+              background: url(../../../../Assets/Images/Svg/selected.svg)
+                no-repeat;
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+              height: 20px;
+              width: 20px;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
+
+          input[type="checkbox"]:not(:checked) + label {
+            &::after {
+              content: "";
+              background: url(../../../../Assets/Images/Svg/unselected.svg)
+                no-repeat;
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+              height: 20px;
+              width: 20px;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
+        }
+
+        .video-gallery-title {
+          font-size: var(--app-font-comman-size);
+          line-height: 20px;
+          color: var(--app-dark-gray);
+          font-weight: var(--app-font-regular);
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+          margin-top:10px;
+        }
+
+        &.skeleton {
+          .video-popup {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

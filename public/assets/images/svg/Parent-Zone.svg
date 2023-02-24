@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="27.993" viewBox="0 0 31 27.993">
+  <g id="Parent_Zone" data-name="Parent Zone" transform="translate(-102 -566.481)">
+    <g id="Rectangle_17283" data-name="Rectangle 17283" transform="translate(102 575.474)" fill="#b0b7d0" stroke="#fff" stroke-width="3">
+      <path d="M9.5,0h0A9.5,9.5,0,0,1,19,9.5V19a0,0,0,0,1,0,0H7.6A7.6,7.6,0,0,1,0,11.4V9.5A9.5,9.5,0,0,1,9.5,0Z" stroke="none"/>
+      <path d="M9.5,1.5h0a8,8,0,0,1,8,8v8a0,0,0,0,1,0,0H7.618A6.118,6.118,0,0,1,1.5,11.382V9.5A8,8,0,0,1,9.5,1.5Z" fill="none"/>
+    </g>
+    <circle id="Ellipse_260" data-name="Ellipse 260" cx="4.798" cy="4.798" r="4.798" transform="translate(106.731 566.481)" fill="#b0b7d0"/>
+    <g id="Rectangle_17281" data-name="Rectangle 17281" transform="translate(115 575.474)" fill="#6d769d" stroke="#fff" stroke-width="3">
+      <path d="M9,0H9a9,9,0,0,1,9,9v2a8,8,0,0,1-8,8H0a0,0,0,0,1,0,0V9A9,9,0,0,1,9,0Z" stroke="none"/>
+      <path d="M9,1.5H9A7.5,7.5,0,0,1,16.5,9v2A6.5,6.5,0,0,1,10,17.5H1.5a0,0,0,0,1,0,0V9A7.5,7.5,0,0,1,9,1.5Z" fill="none"/>
+    </g>
+    <circle id="Ellipse_261" data-name="Ellipse 261" cx="4.798" cy="4.798" r="4.798" transform="translate(118.721 566.481)" fill="#6d769d"/>
+  </g>
+</svg>

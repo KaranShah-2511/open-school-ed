@@ -1,0 +1,168 @@
+.app-my-pupils {
+  width: 100%;
+  overflow: hidden;
+  .panel {
+    margin: 5px 0 40px;
+    .panel-header {
+      margin-bottom: 10px;
+      background: #50a7f0;
+      border-radius: 10px;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: space-between;
+      border-width: 0px;
+      .header-inner {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        .icon {
+          margin: 0 15px 0 0;
+        }
+        h2 {
+          font-size: 20px;
+          color: var(--app-white);
+          font-weight: Bold;
+          line-height: 24px;
+          margin: 0;
+        }
+        .more-action {
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    .panel-body {
+      border-radius: 10px;
+      height: 520px;
+      margin: 0 0 40px;
+      box-shadow: 0 1px 4px rgbA(21, 34, 50, 8%);
+      padding: 0px;
+      .table-responsive {
+        padding: 15px 25px;
+        .table {
+          margin: 0;
+          thead {
+            vertical-align: top;
+          }
+          .first {
+            width: 30%;
+          }
+          .second {
+            width: 15%;
+          }
+          .third {
+            width: 25%;
+          }
+          .four {
+            width: 25%;
+          }
+          th {
+            width: 5%;
+            font-size: var(--app-font-comman-size);
+            color: var(--app-dark-gray);
+            line-height: 20px;
+            font-weight: var(--app-font-regular);
+            border-bottom: 1px solid #ecedf2;
+            span {
+              display: block;
+              color: #b4b6be;
+              font-size: 14px;
+              font-weight: var(--app-font-semibold);
+              text-transform: uppercase;
+            }
+            span.multiple-row {
+              display: flex;
+              vertical-align: middle;
+              align-items: center;
+              justify-content: space-evenly;
+            }
+          }
+          tbody {
+            border: 0;
+            tr {
+              .perfomance {
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                justify-content: space-evenly;
+                span {
+                  width: 10px;
+                  height: 10px;
+                  background: #412dc2;
+                  border-radius: 50% 50%;
+                  display: inline-block;
+                }
+                .engagement {
+                  background: #bc8bff;
+                  position: relative;
+                  left: 5px;
+                }
+                .effort {
+                  background: #ffad12;
+                  position: relative;
+                  left: 23px;
+                }
+              }
+              .reward {
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                justify-content: space-evenly;
+                span {
+                  font-size: 24px;
+                }
+                span:not(span.bronze) {
+                  position: relative;
+                  left: 9px;
+                }
+                .bronze {
+                  color: #db783b;
+                }
+                .silver {
+                  color: #7f8593;
+                }
+                .gold {
+                  color: #c39d00;
+                }
+              }
+            }
+            td {
+              border: 0;
+              padding: 10px;
+              vertical-align: middle;
+              font-size: var(--app-font-comman-size);
+              color: var(--app-dark-gray);
+              line-height: 20px;
+              font-weight: var(--app-font-regular);
+              .profile {
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                img {
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 15px;
+                  border-radius: 100%;
+                }
+                span {
+                  font-size: var(--app-font-comman-size);
+                  color: var(--app-dark-gray);
+                  line-height: 20px;
+                  font-weight: var(--app-font-medium);
+                }
+              }
+              a {
+                text-decoration: none;
+                color: #9598ac;
+                font-size: 20px;
+                &:hover {
+                  color: #412dc2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

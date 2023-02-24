@@ -1,0 +1,137 @@
+.app-pupil-addedit {
+  .pupil-profile-view {
+    height: 100%;
+    width: 100%;
+
+    p {
+      font-size: 17px;
+      padding-bottom: 15px;
+    }
+
+    label {
+      color: #bbbdc5;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .title {
+      border-bottom: 2px solid #f7f7fa;
+      height: 50px;
+    }
+
+    .profile-banner {
+      background: url(../../../../Assets/Images/Svg/profile-top.svg) no-repeat;
+      height: 200px;
+      background-size: cover;
+      position: relative;
+
+      .profile-pic {
+        position: absolute;
+        bottom: -20px;
+        left: 60px;
+
+        img {
+          width: 120px;
+          height: 120px;
+          border: 5px solid #fff;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .edit-profile {
+      .btn {
+        height: 40px;
+        padding: 0 25px;
+        line-height: 38px;
+        appearance: none;
+        border-radius: 8px;
+        font-size: 14px;
+        white-space: nowrap;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        text-transform: uppercase;
+        font-weight: var(--app-font-bold);
+      }
+    }
+  }
+  .profile-banner {
+    background: url(../../../../Assets/Images/Svg/profile-top.svg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+
+    .profile-pic {
+      position: absolute;
+      bottom: -20px;
+      left: 60px;
+
+      img {
+        width: 120px;
+        height: 120px;
+        border: 5px solid #fff;
+        border-radius: 100%;
+      }
+
+      .form-label {
+        color: var(--app-input-border-focus);
+        background-color: #ffffff;
+        padding: 0.2rem 0.4rem;
+        border: 1px solid #cbccd8;
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .profile-pic-input {
+      width: 0px;
+      height: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .form-container {
+    margin: 35px auto 65px;
+    display: block;
+
+    .inner-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .form-label {
+      color: var(--app-label-light);
+      font-weight: var(--app-font-regular);
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  hr {
+    background-color: #f1f2f7;
+    opacity: 1;
+  }
+  .password-field {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 9px;
+      right: 15px;
+      color: var(--app-gray-500);
+      font-size: 22px;
+    }
+
+    .open {
+      color: var(--app-input-border-focus);
+    }
+
+    .toggler {
+      cursor: pointer;
+    }
+  }
+}

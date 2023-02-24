@@ -1,0 +1,40 @@
+.filename-popup-model {
+  .modal-header {
+    background: transparent;
+    height: auto !important;
+    padding: 25px !important;
+  }
+  .modal-title {
+    padding: 5px 25px 5px !important;
+    h2 {
+      text-align: left;
+    }
+  }
+  .modal-dialog {
+    transform: translateY(-50%) !important;
+    top: 50%;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0px;
+  }
+  .app-modal-content {
+    padding: 0 20px 20px;
+  }
+  .modal-footer {
+    .btn-success {
+      text-transform: uppercase;
+      font-size: 14px;
+      height: 40px;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      font-weight: var(--app-font-bold);
+      svg {
+        font-size: 14px;
+        margin: 0 5px 0 0;
+        stroke-width: 2px;
+      }
+    }
+  }
+}

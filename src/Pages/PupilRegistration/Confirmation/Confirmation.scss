@@ -1,0 +1,72 @@
+.app-pupil-registration-confirmation {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  .banner {
+    background: url(../../../Assets/Images/Svg/login-pupil.svg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+  }
+  .content-area {
+    height: 100vh;
+    display: grid;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    padding: 25px 100px 25px 15px;
+    overflow-y: auto;
+    .title {
+      font-size: 26px;
+      font-weight: var(--app-font-bold);
+      color: var(--app-dark-gray);
+      margin: 0 0 30px;
+      padding: 0;
+    }
+    .mail-link {
+      color: var(--app-label-light);
+      text-decoration: none;
+      font-weight: var(--app-font-bold);
+    }
+    .verify-text {
+      margin-bottom: 100px;
+    }
+    p {
+      font-size: var(--app-font-comman-size);
+      color: var(--app-dark-gray);
+      margin-bottom: 30px;
+      line-height: 20px;
+      font-weight: var(--app-font-regular);
+    }
+    .btn {
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: var(--app-font-bold);
+      padding: 15px 25px;
+      display: inline-block;
+      border-radius: 10px;
+      .spinner {
+        margin-left: 8px;
+      }
+    }
+    .intro {
+      font-size: var(--app-font-comman-size);
+      margin-bottom: 0;
+      color: var(--app-label-light);
+      font-weight: var(--app-font-regular);
+      span {
+        color: var(--app-dark-gray);
+        display: block;
+        margin-bottom: 5px;
+      }
+      a {
+        color: var(--app-label-light);
+        &:hover,
+        &:focus {
+          color: #00a36b;
+        }
+      }
+    }
+  }
+}

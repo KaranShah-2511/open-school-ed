@@ -1,0 +1,158 @@
+.header-pupil-homework-detail {
+  .save-btn {
+    text-transform: uppercase;
+    font-weight: var(--app-font-bold);
+    font-size: 14px;
+    padding: 0 20px;
+    height: 40px;
+  }
+  .spinner {
+    margin-left: 8px;
+  }
+}
+.pupil-homework-detail {
+  .pupil-hw-left {
+    padding-right: 22px;
+    label {
+      font-size: var(--app-font-comman-size);
+      font-weight: var(--app-font-regular);
+      color: var(--app-label-light);
+      line-height: 24px;
+    }
+    .toggle-switch {
+      float: right;
+    }
+    .input-group {
+      .input-group-text {
+        background: transparent;
+      }
+    }
+    label.title-line {
+      position: relative;
+      font-size: 18px;
+      font-weight: var(--app-font-semibold);
+      color: var(--app-dark-gray);
+      line-height: 22px;
+      margin: 0 0 20px;
+      width: 100%;
+    }
+    .homework-subject {
+      width: 25%;
+      label {
+        margin: 0 0 8px;
+      }
+      img {
+        margin: 0 10px 0 0;
+        width: 16px;
+      }
+    }
+    .homework-topic {
+      width: 25%;
+      label {
+        margin: 0 0 8px;
+      }
+      img {
+        margin: 0 10px 0 0;
+        width: 28px;
+      }
+    }
+    .homework-class-detail {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          label {
+            color: var(--app-dark-gray);
+          }
+          font-size: var(--app-font-comman-size);
+          font-weight: var(--app-font-regular);
+          color: var(--app-dark-gray);
+          line-height: 20px;
+          padding: 0 10px 12px 10px;
+          margin: 0 0 12px;
+          position: relative;
+          border-bottom: 1px solid #f1f2f7;
+        }
+      }
+    }
+  }
+  .pupil-hw-right {
+    padding-left: 4px;
+    border-left: 1px solid #f1f2f7;
+    height: 100%;
+    .learning-homework {
+      padding: 0px 15px 0;
+      h2 {
+        font-size: 18px;
+        line-height: 22px;
+        color: #262626;
+        font-weight: 600;
+        margin: 0 0 20px;
+        padding: 0;
+      }
+      .app-fileuploader {
+        position: relative;
+        width: 100%;
+        margin: 0 0 20px;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 150px;
+          background: url(../../../../../../Assets/Images/Svg/image-uploader-homework.svg) no-repeat;
+          background-size: contain;
+          background-position: 50% 50%;
+          left: 0;
+          top: 0;
+        }
+        input.form-control {
+          height: 150px;
+          border: 0;
+          opacity: 0;
+          position: relative;
+          z-index: 9;
+        }
+      }
+      ul.learning-homework-inner {
+        margin: 0 0 40px;
+        padding: 0;
+        list-style: none;
+        li {
+          width: 100%;
+          display: inline-block;
+          margin: 0 0 10px;
+          a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            vertical-align: middle;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            color: #262626;
+            font-size: 16px;
+            text-decoration: none;
+            border: 1px solid #e7e9ef;
+            border-radius: 8px;
+            padding: 10px 15px;
+            line-height: 20px;
+            &:hover {
+              background-color: #f3f5f9;
+            }
+            img {
+              width: 16px;
+            }
+            svg {
+              font-size: 12px;
+              color: #9598ac;
+            }
+          }
+        }
+      }
+    }
+  }
+}

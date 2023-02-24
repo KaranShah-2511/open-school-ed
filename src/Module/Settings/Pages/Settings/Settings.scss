@@ -1,0 +1,203 @@
+.app-setting {
+  .list-table {
+    thead tr th {
+      display: inline-block;
+      font-size: var(--app-font-comman-size);
+      color: var(--app-dark-gray);
+      line-height: 20px;
+      font-weight: var(--app-font-regular);
+      border-bottom: 0;
+      padding: 0;
+      text-transform: none;
+      &:first-child,
+      &:last-child {
+        width: 28px;
+      }
+      &:nth-child(2) {
+        width: 11%;
+        margin-left: 15px;
+      }
+      &:nth-child(3) {
+        width: 13%;
+      }
+      &:nth-child(4) {
+        width: 13%;
+      }
+      &:nth-child(5) {
+        width: 13%;
+      }
+      &:nth-child(6) {
+        width: 22%;
+      }
+      &:nth-child(7) {
+        width: 22%;
+      }
+      span {
+        display: block;
+        color: #b4b6be;
+        font-size: 14px;
+        font-weight: var(--app-font-semibold);
+        text-transform: uppercase;
+      }
+      span.multiple-row {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+    tbody tr td {
+      width: 12%;
+      .perfomance {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-evenly;
+        span {
+          width: 10px;
+          height: 10px;
+          background: #412dc2;
+          border-radius: 50% 50%;
+          display: inline-block;
+        }
+        .engagement {
+          background: #bc8bff;
+          position: relative;
+          left: 5px;
+        }
+        .effort {
+          background: #ffad12;
+          position: relative;
+          left: 23px;
+        }
+      }
+      .reward {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-evenly;
+        span {
+          font-size: 24px;
+        }
+        span:not(span.bronze) {
+          position: relative;
+          left: 9px;
+        }
+        .bronze {
+          color: #db783b;
+        }
+        .silver {
+          color: #7f8593;
+        }
+        .gold {
+          color: #c39d00;
+        }
+      }
+      &:last-child {
+        a {
+          color: #9598ac;
+          font-size: 20px;
+        }
+      }
+      &:first-child,
+      &:last-child {
+        width: 28px;
+      }
+      &:nth-child(2) {
+        width: 11%;
+        margin-left: 15px;
+      }
+      &:nth-child(3) {
+        width: 13%;
+      }
+      &:nth-child(4) {
+        width: 13%;
+      }
+      &:nth-child(5) {
+        width: 13%;
+      }
+      &:nth-child(6) {
+        width: 22%;
+      }
+      &:nth-child(7) {
+        width: 22%;
+      }
+    }
+  }
+  label.title-line {
+    position: relative;
+    font-size: 18px;
+    font-weight: var(--app-font-semibold);
+    color: var(--app-dark-gray);
+    line-height: 22px;
+    margin: 0 0 20px;
+    width: 100%;
+    &:after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f1f2f7;
+      margin: 0 0 0 15px;
+      right: 0;
+    }
+    span {
+      background: var(--app-white);
+      display: inline-block;
+      padding: 0 10px 0 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  label.subtitle-line {
+    position: relative;
+    font-size: 16px;
+    font-weight: var(--app-font-semibold);
+    color: var(--app-dark-gray);
+    line-height: 22px;
+    margin: 0 0 20px;
+    width: 100%;
+    &:after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f1f2f7;
+      margin: 0 0 0 15px;
+      right: 0;
+    }
+    span {
+      background: var(--app-white);
+      display: inline-block;
+      padding: 0 10px 0 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .setting-ui {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    li {
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--app-font-comman-size);
+      font-weight: var(--app-font-regular);
+      color: var(--app-dark-gray);
+      line-height: 20px;
+      padding: 12px 5px 0px 5px;
+      margin: 12px 0 0px;
+      position: relative;
+    }
+    li + li {
+      border-top: 1px solid #f1f2f7;
+    }
+  }
+}

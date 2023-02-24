@@ -1,0 +1,98 @@
+.app-pupil-zone-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  min-height: 100vh;
+  .login-container {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    .code-title {
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+    p {
+      color: red;
+    }
+    .number-pad {
+      ul {
+        display: flex;
+        padding-left: 0px;
+        justify-content: flex-end;
+
+        li {
+          text-decoration: none;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          width: 33.33%;
+          button {
+            height: 90px;
+            width: 90px;
+            margin: 3px 18px;
+            border-radius: 100%;
+            background-color: #f5f5f5;
+            border: 1px solid #b6b6b6;
+            font-size: 25px;
+            font-weight: 600;
+          }
+          #back-button {
+            border: none;
+            background-color: #ffff;
+            color: #707070;
+            font-size: 35px;
+            font-weight: 600;
+          }
+          :hover {
+            background-color: white;
+          }
+          .logout-link{
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #00a373;
+          }
+        }
+      }
+    }
+  }
+  .password-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .form-control:focus {
+      box-shadow: none;
+    }
+    input {
+      width: 80px;
+      /* height: 35px; */
+      text-decoration: none;
+      margin: 50px 10px 50px 10px;
+      text-align: end;
+      border: none;
+      border-bottom: 3px solid black;
+      font-size: 34px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 0;
+      color: black;
+      border-radius: unset;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

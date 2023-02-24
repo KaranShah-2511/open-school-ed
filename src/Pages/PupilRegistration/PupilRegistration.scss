@@ -1,0 +1,182 @@
+.app-pupil-registration {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  .banner {
+    background: url(../../Assets/Images/Svg/login-pupil.svg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+  }
+  .frm-wrapper {
+    height: 100vh;
+    display: grid;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    padding: 25px 100px 25px 15px;
+    overflow-y: auto;
+    .registration-frm {
+      .login-link {
+        font-size: var(--app-font-comman-size);
+        color: var(--app-light-black);
+        font-weight: var(--app-font-regular);
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: #00a36b;
+        }
+      }
+      .title {
+        font-size: 26px;
+        font-weight: var(--app-font-bold);
+        color: var(--app-dark-gray);
+        margin: 0 0 30px;
+        padding: 0;
+      }
+      label.form-label {
+        color: var(--app-label-light);
+        font-size: var(--app-font-comman-size);
+        font-weight: var(--app-font-regular);
+        margin-bottom: 5px;
+      }
+      input.form-control {
+        height: 40px;
+        border-radius: 6px;
+        font-size: var(--app-font-comman-size);
+        font-weight: var(--app-font-semibold);
+        background: transparent;
+        color: var(--app-dark-gray);
+        &::placeholder {
+          color: var(--app-input-placeholder);
+          font-size: var(--app-font-comman-size);
+          font-weight: var(--app-font-semibold);
+        }
+        &:active,
+        &:focus {
+          border-color: var(--app-input-border-focus);
+          box-shadow: 0 0 0;
+        }
+      }
+      .password-field {
+        position: relative;
+        svg {
+          position: absolute;
+          top: 9px;
+          right: 15px;
+          color: var(--app-gray-500);
+          font-size: 22px;
+        }
+        .open {
+          color: var(--app-input-border-focus);
+        }
+        .toggler {
+          cursor: pointer;
+        }
+      }
+      .forgot-check-box {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-between;
+        .form-check {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          position: relative;
+          float: left;
+          input {
+            width: 17px;
+            height: 17px;
+            margin: 0 8px 0 0;
+            box-shadow: 0 0 0;
+            visibility: hidden;
+            &:checked + label:after {
+              opacity: 1;
+            }
+            &:checked + label:before {
+              background: var(--app-input-border-focus);
+              border-color: var(--app-input-border-focus);
+            }
+          }
+          label {
+            font-size: var(--app-font-comman-size);
+            color: var(--app-light-black);
+            font-weight: var(--app-font-regular);
+            &:before {
+              content: "";
+              width: 17px;
+              height: 17px;
+              position: absolute;
+              top: 4px;
+              left: 0;
+              border: 1px solid var(--app-input-border-focus);
+              border-radius: 3px;
+            }
+            &:after {
+              content: "";
+              width: 10px;
+              height: 6px;
+              position: absolute;
+              top: 8px;
+              left: 4px;
+              border: 2px solid #fff;
+              border-top: none;
+              border-right: none;
+              background: transparent;
+              opacity: 0;
+              transform: rotate(-45deg);
+            }
+            &:hover::after {
+              opacity: 0.1;
+            }
+          }
+        }
+        .forgot-link {
+          a {
+            text-decoration: none;
+            font-size: var(--app-font-comman-size);
+            color: var(--app-input-border-focus);
+            font-weight: var(--app-font-medium);
+            &:hover,
+            &:focus {
+              color: #00a36b;
+            }
+          }
+        }
+      }
+      .btn {
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: var(--app-font-bold);
+        padding: 15px 25px;
+        display: inline-block;
+        border-radius: 10px;
+        .spinner {
+          margin-left: 8px;
+        }
+      }
+      .intro {
+        font-size: var(--app-font-comman-size);
+        margin-bottom: 0;
+        color: var(--app-label-light);
+        font-weight: var(--app-font-regular);
+        span {
+          color: var(--app-dark-gray);
+          display: block;
+          margin-bottom: 5px;
+        }
+        a {
+          color: var(--app-label-light);
+          &:hover,
+          &:focus {
+            color: #00a36b;
+          }
+        }
+      }
+    }
+  }
+}

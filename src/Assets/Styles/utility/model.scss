@@ -1,0 +1,101 @@
+.modal {
+  .modal-dialog {
+    .modal-header {
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      justify-content: unset;
+      height: 80px;
+      img {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50% 50%;
+        border: 4px solid var(--app-white);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+      }
+      .btn-close {
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+        background-size: 1.2rem;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 50;
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0;
+        }
+      }
+    }
+    .modal-content {
+      box-shadow: 0 0 0;
+      border: 0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .modal-body {
+      .modal-inner {
+        .modal-title {
+          padding: 30px;
+          h2 {
+            font-size: 24px;
+            line-height: 28px;
+            color: var(--app-dark-gray);
+            font-weight: var(--app-font-semibold);
+            margin: 0 0 10px;
+          }
+          p {
+            font-size: var(--app-font-comman-size);
+            margin: 0;
+            font-weight: var(--app-font-regular);
+            color: var(--app-dark-gray);
+            line-height: 20px;
+          }
+        }
+      }
+      form {
+        label {
+          font-size: var(--app-font-comman-size);
+          font-weight: var(--app-font-regular);
+          line-height: 20px;
+          color: var(--app-label-light);
+          padding: 0 10px 10px;
+          margin: 0;
+        }
+        .modal-copy {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          justify-content: space-between;
+          textarea {
+            border: 1px solid var(--app-input-light-border);
+            height: 95px;
+            resize: none;
+            padding: 10px 15px;
+            background: var(--app-white);
+            width: calc(100% - 60px);
+            font-size: var(--app-font-comman-size);
+            line-height: 24px;
+            font-weight: var(--app-font-regular);
+            color: var(--app-dark-gray);
+          }
+          a {
+            font-size: 22px;
+            color: #50a8f0;
+            &:hover {
+              color: #00a36b;
+            }
+          }
+        }
+      }
+    }
+  }
+}

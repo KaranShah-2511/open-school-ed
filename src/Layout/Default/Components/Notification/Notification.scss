@@ -1,0 +1,164 @@
+.app-notification {
+  nav.navbar {
+    padding: 0;
+    button {
+      padding: 19px;
+      background: url(../../../../Assets/Images/Svg/bell.svg) no-repeat;
+      background-position: 50% 50%;
+      background-size: 17px;
+      border: 1px solid #dcdce2;
+      border-radius: 8px;
+      position: relative;
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0;
+      }
+      span {
+        display: none;
+      }
+      &:after {
+        content: "";
+        background: #ff200d;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        border-radius: 50%;
+        right: -5px;
+        top: -5px;
+        border: 3px solid var(--app-white);
+      }
+    }
+  }
+}
+#app-notification {
+  .notification-main {
+    display: inline-block;
+    width: 100%;
+  }
+  .offcanvas-body {
+    padding: 0;
+    .notification-title {
+      padding: 0 20px;
+      margin: 15px 0 10px;
+      h5 {
+        font-size: 14px;
+        margin: 0;
+        color: #b4b6be;
+        font-weight: var(--app-font-semibold);
+        text-transform: uppercase;
+      }
+    }
+    .personal-notification {
+      .notification-list {
+        li {
+          .title-closer h4 {
+            font-weight: var(--app-font-medium);
+          }
+        }
+      }
+    }
+    .notification-list {
+      ul {
+        margin: 0 0 15px;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+          padding: 12px 28px;
+          border-top: 1px solid #f1f2f7;
+          border-bottom: 1px solid #f1f2f7;
+          width: 100%;
+          .title-closer {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 0 0 20px;
+            h4 {
+              font-size: 15px;
+              font-weight: var(--app-font-regular);
+              line-height: 22px;
+              width: 85%;
+              margin: 0;
+            }
+            .btn-close {
+              opacity: 0.3;
+              padding: 0;
+              margin: 0;
+              width: 13px;
+              height: 13px;
+              background-size: 1.2rem;
+              transition: all 0.3s ease-out;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+          .timeandstarter {
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: space-between;
+            .time {
+              display: flex;
+              vertical-align: middle;
+              align-items: center;
+              font-size: 14px;
+              font-weight: var(--app-font-regular);
+              color: var(--app-dark-gray);
+              line-height: 20px;
+              img {
+                width: 16px;
+                margin-right: 8px;
+              }
+            }
+            .notification-open-link {
+              text-decoration: none;
+              font-size: 13px;
+              font-weight: var(--app-font-bold);
+              line-height: 20px;
+              text-transform: uppercase;
+              color: #00a36b;
+              &:hover {
+                color: var(--app-dark-gray);
+              }
+            }
+          }
+        }
+        li.recent {
+          background-color: #f5f7fb;
+          h4 {
+            font-weight: var(--app-font-medium);
+          }
+        }
+      }
+    }
+  }
+  .notification-footer {
+    padding: 0;
+    border: 0;
+    box-shadow: 0 0 24px rgba(19, 23, 31, 0.1);
+    .notification-clear {
+      width: 100%;
+      a {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--app-dark-gray);
+        padding: 15px;
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: var(--app-font-regular);
+        svg {
+          font-size: 22px;
+          margin: 0 5px 0 0;
+          color: #9598ac;
+        }
+      }
+    }
+  }
+}

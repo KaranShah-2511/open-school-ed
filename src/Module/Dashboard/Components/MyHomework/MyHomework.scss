@@ -1,0 +1,233 @@
+.app-my-homework {
+  width: 100%;
+  overflow: hidden;
+  .panel {
+    margin: 0px 0 40px 0px;
+    .panel-header {
+      // margin-bottom: 10px;
+      background: #bc8bfd;
+      border-radius: 10px 10px 0px 0px;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: space-between;
+      border-width: 0px;
+      .header-inner {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        .icon {
+          margin: 0 15px 0 0;
+        }
+        h2 {
+          font-size: 20px;
+          color: var(--app-white);
+          font-weight: Bold;
+          line-height: 24px;
+          margin: 0;
+        }
+        .calender {
+          background: var(--app-white);
+          position: absolute;
+          top: 0;
+          right: 50px;
+          border-radius: 0 0 8px 8px;
+          text-align: center;
+          line-height: 15px;
+          padding: 8px 10px;
+          font-size: 14px;
+          font-weight: var(--app-font-bold);
+          box-shadow: 0 4px 4px #ebac39;
+        }
+        .calender span {
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-action {
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    .panel-body {
+      border-radius: 0px 0px 10px 10px;
+      border-color: #bc8bfd;
+      border-width: 10px;
+      border-top-width: 0px;
+      height: 520px;
+      margin: 0 0 40px;
+      box-shadow: 0 1px 4px rgbA(21, 34, 50, 8%);
+      padding: 0px;
+      .tab-nav-area {
+        padding-left: calc(var(--app-gutter-x) * 0.5) !important;
+      }
+      .tab-content-area {
+        padding-right: calc(var(--app-gutter-x) * 0.5) !important;
+      }
+      .nav-link {
+        background: var(--app-white);
+        border-radius: 0;
+        padding: 20px 35px 20px 20px;
+        position: relative;
+        cursor: pointer;
+        .tabLink {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          justify-content: space-between;
+          .tabSub {
+            color: var(--app-dark-gray);
+            font-weight: var(--app-font-medium);
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            .subLine {
+              width: 4px;
+              height: 45px;
+              border-radius: 8px;
+              margin: 0 15px 0 0;
+            }
+            .sub {
+              font-size: 16px;
+              font-weight: var(--app-font-semibold);
+              line-height: 22px;
+              span {
+                display: block;
+                font-size: 14px;
+                font-weight: var(--app-font-regular);
+              }
+            }
+          }
+          .tabSub.time {
+            display: block;
+            .group {
+              border-radius: 5px;
+              display: inline-block;
+              font-size: 12px;
+              color: #4e4e4e;
+              border: 1px solid #dcdce2;
+              padding: 0 5px;
+              font-weight: var(--app-font-semibold);
+            }
+            time {
+              display: block;
+              margin: 3px 0 0;
+            }
+          }
+        }
+        &:after {
+          content: "";
+          width: calc(100% - 40px);
+          height: 1px;
+          background: #ecedf2;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &.active {
+          background: #f5f7fb;
+          &:after {
+            width: 100%;
+          }
+          .tabLink {
+            &:before {
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+              border-right: 10px solid #eaebf2;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              transition: all 0.3s ease-out;
+              z-index: 1;
+            }
+          }
+          &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid var(--app-white);
+            position: absolute;
+            right: -1px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease-out;
+            z-index: 2;
+          }
+        }
+      }
+      .tab-content {
+        border-left: 1px solid #eaebf2;
+        height: 100%;
+        overflow-y: auto;
+        width: 100%;
+        .content-inner {
+          padding: 30px 30px 25px 40px;
+          .title-bar {
+            border-bottom: 1px solid #eaebf2;
+            padding: 0 0 20px;
+            margin: 0 0 20px;
+            h2 {
+              font-size: 26px;
+              line-height: 35px;
+              color: var(--app-dark-gray);
+              font-weight: var(--app-font-bold);
+              margin-bottom: 15px;
+            }
+            .date-time-group {
+              display: flex;
+              vertical-align: middle;
+              align-items: center;
+              .common-dtg {
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                margin: 0 25px 0 0;
+                img {
+                  width: 16px;
+                  margin: 0 8px 0 0;
+                }
+                span {
+                  font-size: 15px;
+                  font-weight: var(--app-font-medium);
+                }
+              }
+            }
+          }
+          .checkbox-section{
+            h4{
+                margin-bottom: 20px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    display: flex;
+                    .form-check-input,.form-check-label {
+                      opacity: unset;
+                    }
+                }
+            }
+          }
+          .btn-area .btn {
+            font-size: 14px;
+            padding: 15px 25px;
+            line-height: normal;
+            display: inline-block;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

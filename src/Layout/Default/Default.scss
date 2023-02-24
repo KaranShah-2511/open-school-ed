@@ -1,0 +1,32 @@
+.app-wrapper {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  // min-height: 100vh;
+  // overflow-x: hidden;
+  .right-main-content {
+    left: 72px;
+    width: calc(100% - 72px);
+    position: absolute;
+    transition: all 0.3s ease-out;
+    &.toggle {
+      left: 260px;
+    }
+    .app-header-outer {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .app-header-outer.app-inner {
+      box-shadow: 0 2px 2px rgba(21, 34, 50, 0.08);
+    }
+    .main-content {
+      padding-top: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .main-content.app-inner {
+      background: #f9fafc;
+      min-height: 100vh;
+    }
+  }
+}

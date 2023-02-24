@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <g id="icon" transform="translate(2 2)">
+    <circle id="Ellipse_267" data-name="Ellipse 267" cx="5.5" cy="5.5" r="5.5" transform="translate(8 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.4"/>
+    <line id="Line_215" data-name="Line 215" y1="2" transform="translate(14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_216" data-name="Line 216" x1="0.792" y1="0.792" transform="translate(4.013 4.258)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_217" data-name="Line 217" x1="1" transform="translate(0 14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_218" data-name="Line 218" x1="0.792" y2="0.792" transform="translate(4.013 21.938)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_219" data-name="Line 219" y2="1" transform="translate(14 26)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_220" data-name="Line 220" x2="0.792" y2="0.792" transform="translate(21.692 21.938)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_221" data-name="Line 221" x2="2" transform="translate(25 14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_222" data-name="Line 222" y1="0.792" x2="0.792" transform="translate(21.692 4.258)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

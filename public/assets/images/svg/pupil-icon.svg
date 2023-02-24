@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="28" height="28" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon" clip-path="url(#clip-path)">
+    <g id="icon-2" data-name="icon" transform="translate(1.5 1.5)">
+      <circle id="Ellipse_269" data-name="Ellipse 269" cx="12.5" cy="12.5" r="12.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+      <circle id="Ellipse_270" data-name="Ellipse 270" cx="4.5" cy="4.5" r="4.5" transform="translate(8 5)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Path_3239" data-name="Path 3239" d="M63.8,164.009c1.64-2.46,4.951-4.009,8.569-4.009s6.929,1.549,8.569,4.009" transform="translate(-59.98 -142.317)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

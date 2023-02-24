@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444.073" height="306.873" viewBox="0 0 444.073 306.873">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.798" y1="-0.331" x2="0.5" y2="1.098" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c193ff"/>
+      <stop offset="1" stop-color="#e0c6ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff4c6"/>
+      <stop offset="1" stop-color="#ffea76"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_790" data-name="Group 790" transform="translate(-640.625 -1469.02)">
+    <g id="Group_2" data-name="Group 2" transform="translate(627.324 1548)">
+      <path id="Shape_440_1" data-name="Shape 440 1" d="M611.048,649.056H171.52c0-9.26-1.015,8.2-1.015-1.055-16.346-.148,28.013-21.292,52.471-33.425,60.306-29.916,84.649-22.406,107.805-16.715,24.149,5.934,65.162,14.082,92.123,5.931,23.59-7.133,31.384-9.6,62.778-34.955S611.048,509.928,611.048,649.056Z" transform="translate(-153.674 -422.909)" fill="#e4f2fc" fill-rule="evenodd"/>
+      <circle id="Ellipse_179" data-name="Ellipse 179" cx="15.994" cy="15.994" r="15.994" transform="translate(314.503 -78.98)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" cx="8.605" cy="8.605" r="8.605" transform="translate(57.53 107.225)" fill="#a8d7ff"/>
+      <path id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" d="M444.6,256.781a19.6,19.6,0,1,1-19.6,19.6A19.6,19.6,0,0,1,444.6,256.781Z" transform="translate(-189.026 -179.697)" fill="#fff0af" fill-rule="evenodd"/>
+      <path id="Ellipse_3_copy_2-2" data-name="Ellipse 3 copy 2" d="M439.816,256.781A14.816,14.816,0,1,1,425,271.6,14.816,14.816,0,0,1,439.816,256.781Z" transform="translate(-351.364 -277.609)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

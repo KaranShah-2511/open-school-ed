@@ -1,0 +1,42 @@
+.app-my-insights {
+  width: 100%;
+  overflow: hidden;
+  .panel {
+    margin: 5px 0 40px;
+    .panel-header {
+      margin-bottom: 10px;
+      background: #DC7EFF;
+      border-radius: 10px;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: space-between;
+      border-width: 0px;
+      .header-inner {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        .icon {
+          margin: 0 15px 0 0;
+        }
+        h2 {
+          font-size: 20px;
+          color: var(--app-white);
+          font-weight: Bold;
+          line-height: 24px;
+          margin: 0;
+        }
+        .more-action {
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    .panel-body {
+      border-radius: 10px;
+      height: 520px;
+      margin: 0 0 40px;
+      box-shadow: 0 1px 4px rgbA(21, 34, 50, 8%);
+      padding: 0px;
+    }
+  }
+}
